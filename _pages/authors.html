@@ -1,0 +1,33 @@
+---
+layout: page
+title: Contributors
+navigation: true
+class: page-template
+permalink: authors/
+---
+
+{% assign authors = site.data.authors %}
+<div class="post-feed">
+    {% for long_author in authors %}
+    {% assign author=long_author[1] %}
+    <article class="post-card {% unless author.picture %}no-image{% endunless %}">
+        {% if author.picture %}
+        <a class="post-card-image-link" href="{{ site.baseurl }}author/{{ author.username }}">
+            <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ author.picture }})"></div>
+        </a>
+        {% endif %}
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="{{ site.baseurl }}author/{{ author.username }}">
+                <header class="post-card-header">
+                    <h2 class="post-card-title">{{author.name}}</h2>
+                </header>
+                {% if author.bio %}
+                <section class="post-card-excerpt">
+                    <p>{{author.bio}}</p>
+                </section>
+                {% endif %}
+            </a>
+        </div>
+    </article>
+    {% endfor %}
+</div>

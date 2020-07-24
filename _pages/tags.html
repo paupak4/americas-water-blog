@@ -1,0 +1,38 @@
+---
+layout: page
+title: Blog Topics
+navigation: true
+class: page-template
+permalink: tags/
+---
+
+
+{% assign tags = site.data.tags %}
+<div class="post-feed">
+    {% for long_tag in tags %}
+    {% assign tag = long_tag[1] %}
+    <article class="post-card {% unless author.picture %}no-image{% endunless %}">
+        {% if tag.cover %}
+        <a class="post-card-image-link" href="{{ site.baseurl }}tag/{{ tag.name }}">
+            <div class="post-card-image" style="background-image: url({{ site.baseurl }}{{ tag.cover }})"></div>
+        </a>
+        {% else %}
+        <a class="post-card-image-link" href="{{ site.baseurl }}tag/{{ tag.name }}">
+            <div class="post-card-image" style="background-image: url({{site.baseurl}}{{site.cover}})"></div>
+        </a>
+        {% endif %}
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="{{ site.baseurl }}tag/{{ tag.name }}">
+                <header class="post-card-header">
+                    <h2 class="post-card-title">{{tag.long_name}}</h2>
+                </header>
+                {% if tag.description %}
+                <section class="post-card-excerpt">
+                    <p>{{tag.description}}</p>
+                </section>
+                {% endif %}
+            </a>
+        </div>
+    </article>
+    {% endfor %}
+</div>
