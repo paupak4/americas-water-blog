@@ -1,10 +1,8 @@
-ghost:
-  username: ghost
-  name: Ghost
-  url_full: http://jekyller.github.io/jasper2/
-  url: jekyller.github.io/jasper2
-  bio: The professional publishing platform
-  picture: assets/images/ghost.png
-  facebook: ghost
-  twitter: tryghost
+  username: jdossgollin
+  name: James Doss-Gollin
+  url_full: https://jamesdossgollin.me
+  url: jamesdossgollin.me
+  bio: I use data science, decision science, and earth science to design adaptive infrastructure for resilient communities
+  picture: assets/images/people/james.jpg
+  twitter: jdossgollin
   cover: False

@@ -8,7 +8,7 @@ date: 2017-07-27 10:00:00
 tags: [getting-started]
 class: post-template
 subclass: 'post'
-author: ghost
+author: jdossgollin
 permalink: markdown-tips
 ---
 
@@ -69,11 +69,8 @@ If you add `#full` to the end of the image URL, you can get cool full-width imag
 
 ![walking](https://upload.wikimedia.org/wikipedia/commons/4/4e/Drought_in_the_Valley.JPG#full)
 
-Sites like Flickr also provide code to embed an image:
-
-```
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/bertknot/8180659592/in/gallery-188632717@N05-72157714493410492/" title="maaslant kering (5)"><img src="https://live.staticflickr.com/8200/8180659592_ec99b73c75.jpg" width="500" height="309" alt="maaslant kering (5)"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-```
+Sites like Flickr also provide code to embed an image.
+Copying and pasting in the `html` code from their site gives nice results like:
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/bertknot/8180659592/in/gallery-188632717@N05-72157714493410492/" title="maaslant kering (5)"><img src="https://live.staticflickr.com/8200/8180659592_ec99b73c75.jpg" width="500" height="309" alt="maaslant kering (5)"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
