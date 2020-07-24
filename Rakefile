@@ -61,16 +61,18 @@ namespace :site do
     check_destination
 
     Dir.mktmpdir do |tmp|
-      cp_r DESTINATION_DIR, tmp
+      cp_r "#{DESTINATION_DIR}/.", tmp
   
       pwd = Dir.pwd
       Dir.chdir tmp
-  
+      
       system "git init"
       system "git add ."
       message = "Site updated at #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
       system "git remote add origin git@github.com:#{USERNAME}/#{REPO}.git"
+      system "git branch #{DESTINATION_BRANCH}"
+      system "git checkout #{DESTINATION_BRANCH}"
       system "git push origin #{DESTINATION_BRANCH} --force"
   
       Dir.chdir pwd
