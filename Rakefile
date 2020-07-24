@@ -66,12 +66,13 @@ namespace :site do
       Dir.chdir tmp
   
       system "git init"
+      system "git checkout #{DESTINATION_BRANCH}"
       system "git add ."
       message = "Site updated at #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
       system "git remote add origin git@github.com:#{USERNAME}/#{REPO}.git"
-      system "git push origin master --force"
-  
+      system "git push origin #{DESTINATION_BRANCH} --force"
+      system "git checkout #{SOURCE_BRANCH}"
       Dir.chdir pwd
     end
   end

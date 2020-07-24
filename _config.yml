@@ -6,15 +6,15 @@ language: "en-us"
 words_per_minute: 200 # used to estimate how long to read
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: ""
+baseurl: /americas-water-blog/
 
 # Website info
 title: America's Water Blog
 description: A digital community sharing visions of water justice, security, and sustainability
-cover: /assets/images/blog-cover.jpg
-#logo: /assets/images/blog-icon.png
-#logo_dark: /assets/images/favicon.png
-favicon: /assets/images/favicon.png
+cover: {{ site.baseurl }}assets/images/blog-cover.jpg
+#logo: {{ site.baseurl }}assets/images/blog-icon.png
+#logo_dark: {{ site.baseurl }}assets/images/favicon.png
+favicon: {{ site.baseurl }}assets/images/favicon.png
 CNAME: #add cname for website to be created
 
 # Social info

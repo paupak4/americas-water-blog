@@ -2,4 +2,4 @@ getting-started:
   name: getting-started
   long_name: Geting Started
   description: False
-  cover: /assets/images/welcome.jpg
+  cover: {{ site.baseurl }}assets/images/welcome.jpg
