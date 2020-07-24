@@ -58,11 +58,12 @@ namespace :site do
     # Make sure destination folder exists as git repo
     check_destination
 
+    # Generate the site
+    sh "bundle exec jekyll build"
+
     sh "git checkout #{SOURCE_BRANCH}"
     Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
 
-    # Generate the site
-    sh "bundle exec jekyll build"
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
