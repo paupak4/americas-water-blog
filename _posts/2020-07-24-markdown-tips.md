@@ -4,7 +4,7 @@ current: post
 cover:  assets/images/welcome.jpg
 navigation: True
 title: How to write blog posts with Markdown
-date: 2017-07-27 10:00:00
+date: 2020-07-24 19:00:00
 tags: [how-to-contribute]
 class: post-template
 subclass: 'post'
