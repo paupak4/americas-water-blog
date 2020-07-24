@@ -9,7 +9,7 @@ permalink: contribute/
 We welcome new submissions to the blog.
 If you've never written for the blog before, please (go through some procedure).
 
-This blog is managed by [James Doss-Gollin]({{site.baseurl}}authors/jdossgollin) and he reserves the right to determine what content should be published.
+This blog is managed by [James Doss-Gollin](/authors/jdossgollin) and he reserves the right to determine what content should be published.
 
 ## Submitting a blog post using GitHub
 

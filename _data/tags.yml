@@ -1,20 +1,5 @@
-speeches:
-  name: speeches
-  long_name: Speeches
-  description: Some of the greatest words ever spoken.
-  cover: assets/images/speeches.jpg
-fiction:
-  name: fiction
-  long_name: Fiction
-  description: Some works of fiction
-  cover: False
-fables:
-  name: fables
-  long_name: Fables
-  description: A series of short stories that make you think.
-  cover: assets/images/fables.jpg
 getting-started:
   name: getting-started
   long_name: Geting Started
   description: False
-  cover: False
+  cover: /assets/images/welcome.jpg

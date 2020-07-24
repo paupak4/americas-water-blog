@@ -6,25 +6,26 @@ language: "en-us"
 words_per_minute: 200 # used to estimate how long to read
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /america-water-blog/
+baseurl: ""
 
 # Website info
 title: America's Water Blog
 description: A digital community sharing visions of water justice, security, and sustainability
-cover: assets/images/blog-cover.jpg
-#logo: assets/images/blog-icon.png
-#logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+cover: /assets/images/blog-cover.jpg
+#logo: /assets/images/blog-icon.png
+#logo_dark: /assets/images/favicon.png
+favicon: /assets/images/favicon.png
 CNAME: #add cname for website to be created
-email: jdossgollin@psu.edu
 
 # Social info
 navigation: True # show the navbar links
 subscribers: False # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: columbiawater # replace by your username
-facebook: Columbia-Water-Center-90696088246 # replace by your username
+
+twitter: False # replace by your username
+facebook: False # replace by your username
+email: jdossgollin.psu@gmail.com # email for inquiries
 
 # include pages
 include: [_pages]
