@@ -1,5 +1,5 @@
-speeches:
-  name: getting-started
-  long_name: Getting Started
-  description: Some of the greatest words ever spoken.
+how-to-contribute:
+  name: how-to-contribute
+  long_name: How to contribute
+  description: Guides for how to contribute to this blog
   cover: assets/images/welcome.jpg

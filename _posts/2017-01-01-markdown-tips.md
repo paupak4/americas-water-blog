@@ -5,7 +5,7 @@ cover:  assets/images/welcome.jpg
 navigation: True
 title: How to write blog posts with Markdown
 date: 2017-07-27 10:00:00
-tags: [getting-started]
+tags: [how-to-contribute]
 class: post-template
 subclass: 'post'
 author: jdossgollin
