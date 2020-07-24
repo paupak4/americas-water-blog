@@ -75,7 +75,8 @@ lsi: False
 username: jdossgollin
 repo: americas-water-blog
 branch: master
-destination: _site/
+relative_source: ../americas-water-blog/
+destination: ../jasper2-pages/
 production_url: https://jdossgollin.github.io/americas-water-blog/
 source_url: https://github.com/jdossgollin/americas-water-blog/
 
