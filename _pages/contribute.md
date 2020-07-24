@@ -23,12 +23,3 @@ To see how to bold text, italicize text, or add images, see [this cheat sheet](h
 
 If you're not up to using GitHub, you can still submit a blog post by email.
 Send us an [email](mailto:{{site.email}}) with your 
-
-## Embedding photos
-
-Blog posts with images are even better than blog posts with great content!
-To add an image, you just use regular markdown syntax:
-
-```
-![alt text](image url)
-```

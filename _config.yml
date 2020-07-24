@@ -10,7 +10,7 @@ baseurl: "/"
 
 # Website info
 title: America's Water Blog
-description: An inclusive online community sharing visions of equitable, sustainable, and resilient water systems
+description: An inclusive online community working towards equitable, sustainable, and resilient water systems
 cover: assets/images/blog-cover.jpg
 #logo: assets/images/blog-icon.png
 #logo_dark: assets/images/favicon.png
@@ -18,19 +18,14 @@ favicon: assets/images/favicon.png
 CNAME: americaswater.blog
 
 # Social info
+email: jdossgollin.psu@gmail.com # email to contact
+twitter: False # replace by your username
+facebook: False # replace by your username
+
 navigation: False # show the navbar links
 subscribers: False # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-twitter: False # replace by your username
-facebook: False # replace by your username
-
-# Disqus
-disqus: False
-disqus_shortname: jekyller # replace with your disqus username
-
-# Google Analytics
-# google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
@@ -46,17 +41,6 @@ plugins: [jekyll-paginate, jekyll-feed]
 
 feed:
   path: feed.xml
-
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
-
-# Settings for building master branch with travis-ci
-# with jekyll-travis
 
 # Settings for deploy rake task
 # Username and repo of Github repo, e.g.
@@ -75,6 +59,13 @@ production_url: https://americaswater.blog
 source_url: https://github.com/jdossgollin/americas-water-blog/
 
 include: [_pages]
+
+# To use Utterance comments,  you can going to https://utteranc.es/ get more parameters interpretation.
+utterance:
+  repo: jdossgollin/americas-water-blog
+  issue-term: title # Choose the mapping between blog posts and GitHub issues.
+  theme: github-light # Choose an Utterances theme that matches your blog. 'github-light' is default
+  label: blog-comments # Choose the label that will be assigned to issues created by Utterances.
 
 exclude:
   - assets/css
