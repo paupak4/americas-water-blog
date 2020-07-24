@@ -2,33 +2,28 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 100 # it will paginate after this number
-language: "en-us"
-words_per_minute: 200 # used to estimate how long to read
+language: "en-uk"
+words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /americas-water-blog/
 
 # Website info
 title: America's Water Blog
-description: A digital community sharing visions of water justice, security, and sustainability
-cover: {{ site.baseurl }}assets/images/blog-cover.jpg
-#logo: {{ site.baseurl }}assets/images/blog-icon.png
-#logo_dark: {{ site.baseurl }}assets/images/favicon.png
-favicon: {{ site.baseurl }}assets/images/favicon.png
+description: An inclusive online community sharing visions of equitable, sustainable, and resilient water systems
+cover: assets/images/blog-cover.jpg
+logo: assets/images/blog-icon.png
+logo_dark: assets/images/favicon.png
+favicon: assets/images/favicon.png
 CNAME: #add cname for website to be created
 
 # Social info
 navigation: True # show the navbar links
-subscribers: False # you need to connect an external service for this to work,
+subscribers: True # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
-
-twitter: False # replace by your username
-facebook: False # replace by your username
-email: jdossgollin.psu@gmail.com # email for inquiries
-
-# include pages
-include: [_pages]
+twitter: tryghost # replace by your username
+facebook: ghost # replace by your username
 
 # Disqus
 disqus: False
@@ -38,7 +33,7 @@ disqus_shortname: jekyller # replace with your disqus username
 # google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:title
+permalink: pretty
 # permalink: /author/:author
 # permalink: /tag/:tag
 
@@ -72,29 +67,31 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: jdossgollin
-repo: americas-water-blog
+username: jekyller
+repo: jasper2
 branch: master
-destination: _site/
-production_url: https://jdossgollin.github.io/americas-water-blog/
-source_url: https://github.com/jdossgollin/americas-water-blog/
+relative_source: ../jasper2/
+destination: ../jasper2-pages/
+production_url: https://jekyller.github.io/jasper2/
+source_url: https://github.com/jekyller/jasper2/
+
+include: [_pages]
 
 exclude:
-  - .git*
-  - .travis.yml
-  - "*.Rmd"
   - assets/css
-  - changelog.md
+  - node_modules
+  - vendor
+  - .travis.yml
   - Gemfile
   - Gemfile.lock
   - GHOST.txt
   - gulpfile.js
   - LICENSE
-  - node_modules
-  - package-lock.json
   - package.json
+  - package-lock.json
   - Rakefile
   - README.md
   - script.py
-  - script
-  - vendor
+  - changelog.md
+  - "*.Rmd"
+  - .git*

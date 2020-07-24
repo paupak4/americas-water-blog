@@ -1,5 +1,5 @@
-getting-started:
+speeches:
   name: getting-started
-  long_name: Geting Started
-  description: False
-  cover: {{ site.baseurl }}assets/images/welcome.jpg
+  long_name: Getting Started
+  description: Some of the greatest words ever spoken.
+  cover: assets/images/welcome.jpg
