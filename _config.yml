@@ -6,14 +6,14 @@ language: "en-uk"
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: ""
+baseurl: "/"
 
 # Website info
 title: America's Water Blog
 description: An inclusive online community sharing visions of equitable, sustainable, and resilient water systems
 cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
+#logo: assets/images/blog-icon.png
+#logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
 CNAME: americaswater.blog
 
@@ -33,7 +33,7 @@ disqus_shortname: jekyller # replace with your disqus username
 # google_analytics: UA-69281367-1 # replace with your GA tracking identifier
 
 # Permalinks
-permalink: pretty
+permalink: /:title
 # permalink: /author/:author
 # permalink: /tag/:tag
 
