@@ -49,7 +49,7 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    {{ content }}
+                    {{ content | toc }}
                 </div>
             </section>
 
@@ -94,6 +94,8 @@ into the {body} of the default.hbs template -->
     </div>
 </main>
 
+{% include utterances_comment.html %}
+
 <!-- Links to Previous/Next posts -->
 <aside class="read-next outer">
     <div class="inner">
@@ -136,6 +138,7 @@ into the {body} of the default.hbs template -->
                         {% endfor %}
                     </ul>
                 </div>
+
                 <footer class="read-next-card-footer">
                     <a href="{{ site.baseurl }}tag/{{ primary | slugify: "latin" }}/">
                         {% if related_posts > 1 %}
@@ -168,7 +171,6 @@ into the {body} of the default.hbs template -->
 <!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
 {% include floating-header.html %}
 
-{% include utterances_comment.html %}
 <!-- /post -->
 
 <!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
