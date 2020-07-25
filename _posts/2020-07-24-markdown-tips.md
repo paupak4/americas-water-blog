@@ -21,7 +21,7 @@ For things like *italics*, **bold** text, `code`, and links see a good [Markdown
 There are a few special features worth mentioning.
 And if you feel overwhelmed, don't worry -- we're here to help 😎!
 
-### Page Information
+## Page Information
 
 At the top of every blog post is a block of information.
 For example, the information for this post looks like:
@@ -52,7 +52,7 @@ However:
 * `tags`: You can add any number of tags to your image. If you're creating a new tag, you should also add a description to `/_data/tags.yml`.
 * `title`: The title of your post
 
-### Images
+## Images
 
 If you're using images, it's **vital** that you post an image that you have permission to share -- we don't want to get in legal trouble!
 There are two ways to do this:
@@ -87,7 +87,7 @@ Here's how to link to a local image
 
 ![stock photo](assets/images/2020-07-24-markdown-tips/cover.jpeg)
 
-### Math
+## Math
 
 You can embed math using [KaTeX](https://katex.org/){:target="_blank"}.
 For example,
@@ -107,3 +107,58 @@ c = \pm\sqrt{a^2 + b^2}
 {% endkatex %}
 
 See [https://github.com/linjer/jekyll-katex](https://github.com/linjer/jekyll-katex){:target="_blank"_} for more sophisticated syntax including inline math and shortcuts if you're writing a lot of equations.
+
+## Citations
+
+If you're citing an academic document, you can do so using the [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar){:target="_blank"} plugin.
+To do so, you first need to put the bibtex entry for the work you would like to cite in `_bibliography/library.bib`.
+For example, add
+
+{% raw %}
+```bibtex
+@article{doss-gollin_fatalism:2020,
+  title = {Adaptation over Fatalism: Leveraging High-Impact Climate Disasters to Boost Societal Resilience},
+  author = {{Doss-Gollin}, James and Farnham, David J. and Ho, Michelle and Lall, Upmanu},
+  year = {2020},
+  volume = {146},
+  doi = {10.1061/(ASCE)WR.1943-5452.0001190},
+  journal = {Journal of Water Resources Planning and Management},
+  number = {4},
+  open = {true}
+}
+```
+{% endraw %}
+
+Then I can cite it using
+{% raw %}
+```jekyll
+{% cite doss-gollin_fatalism:2020 %}
+```
+{% endraw %}
+which renders as {% cite doss-gollin_fatalism:2020 %}.
+To add a bibliography, just add
+
+{% raw %}
+```jekyll
+{% bibliography --cited %}
+```
+{% endraw %}
+
+at the end of your document and it will render as
+
+{% bibliography --cited %}
+
+## Footnotes
+
+You may want to reference some material that isn't an academic paper or clarify a subtle point.
+You can do so using footnotes.
+To add a footnote to markdown, just type type `[^some_key]` after your text. `some_key` can be a unique identifier for each footnote, since you can have an unlimited number of footnotes.[^1]
+Then somewhere below type
+
+```
+[^some_key]: This is an example of a footnote
+```
+
+and at the bottom of the page it will render as
+
+[^1]: This is an example of a footnote
