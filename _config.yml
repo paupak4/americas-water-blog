@@ -37,7 +37,14 @@ permalink: /:title
 
 # gems and other configs
 plugins_dir: [_plugins]
-plugins: [jekyll-paginate, jekyll-feed]
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
 
 feed:
   path: feed.xml
