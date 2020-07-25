@@ -14,4 +14,5 @@ The America's Water initiative, led by the [Columbia Water Center](http://water.
 As part of this vision, we are building an inclusive digital community to share visions of what water security, water sustainability, and water justice might look like in the United States of America, the Americas, and beyond.
 If you have a bold idea to share with our readers, we welcome thoughtful contributions from the community -- see [our contribution guide]({{ "/tag/how-to-contribute/" | relative_url }}).
 
-This website is currently managed by [James Doss-Gollin](/author/jdossgollin/) with contributions from other [authors]({{ "/authors" | relative_url }}).
+This website is currently managed by [James Doss-Gollin](/author/jdossgollin/) through weak consensus with members of the Columbia Water Center and with contributions from other [authors]({{ "/authors" | relative_url }}).
+All voices are welcome to [contribute](/tag/how-to-contribute) an article.
