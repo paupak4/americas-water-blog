@@ -78,3 +78,12 @@
 <link rel="alternate" type="application/rss+xml"
     title="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     href="{{ site.baseurl }}feed.xml" />
+
+<!--HACK to update code blocks-->
+<style>
+    .highlighter-rouge,
+    .highlight,
+    code {
+        width: 100%;
+    }
+</style>

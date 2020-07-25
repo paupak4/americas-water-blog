@@ -1,6 +1,6 @@
 ---
 author: jdossgollin
-cover:  assets/images/welcome.jpg
+cover:  assets/images/2020-07-24-markdown-tips/cover.jpeg
 date: 2020-07-24 19:00:00
 permalink: markdown-how-to
 title: How to write blog posts with Markdown
@@ -28,17 +28,17 @@ For example, the information for this post looks like:
 
 ```yml
 ---
-author: jdossgollin
-cover:  assets/images/welcome.jpg
-date: 2020-07-24 19:00:00
-permalink: markdown-how-to
-title: How to write blog posts with Markdown
-tags: [how-to-contribute]
-class: post-template
-current: post
-layout: post
-navigation: True
-subclass: 'post'
+cover:  assets/images/YYYY-MM-DD-your-title-with-no-spaces/cover.jpg
+title: Title for your post
+date: YYYY-MM-DD HH:mm:ss
+tags: [tag-1, tag-2, tag-3]
+author: username # remember when you created an author username? It goes here!
+permalink: your-title-with-no-spaces
+navigation: True # don't change this
+layout: post # don't change this
+current: post # don't change this
+class: post-template # don't change this
+subclass: 'post' # don't change this
 ---
 ```
 
@@ -82,10 +82,10 @@ Copying and pasting in the `html` code from their site gives nice results like:
 Here's how to link to a local image
 
 ```markdown
-![stock photo](assets/images/welcome.jpg)
+![stock photo](assets/images/2020-07-24-markdown-tips/cover.jpeg)
 ```
 
-![stock photo](assets/images/welcome.jpg)
+![stock photo](assets/images/2020-07-24-markdown-tips/cover.jpeg)
 
 ### Math
 
