@@ -53,30 +53,34 @@ namespace :site do
     # Configure git if this is run in Travis CI
     if ENV["TRAVIS"]
       sh "git config --global user.name $GIT_NAME"
+      sh "echo GIT_NAME: $GIT_NAME"
       sh "git config --global user.email $GIT_EMAIL"
+      sh "echo GIT_EMAIL: $GIT_EMAIL"
       sh "git config --global push.default simple"
     end
 
     # Make sure destination folder exists as git repo
     check_destination
 
-    sh "git checkout #{SOURCE_BRANCH}"
-    Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
-
-    # Generate the site
     sh "bundle exec jekyll build"
 
-    # Commit and push to github
-    sha = `git log`.match(/[a-z0-9]{40}/)[0]
-    Dir.chdir(CONFIG["destination"]) do
-      # check if there is anything to add and commit, and pushes it
-      sh "if [ -n '$(git status)' ]; then
-            echo '#{CNAME}' > ./CNAME;
-            git add --all .;
-            git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.';
-            git push --quiet origin #{DESTINATION_BRANCH};
-         fi"
-      puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
+    Dir.mktmpdir do |tmp|
+      cp_r DESTINATION_DIR, tmp
+  
+      pwd = Dir.pwd
+      Dir.chdir tmp
+      Dir.chdir DESTINATION_DIR
+  
+      system "git init"
+      system "git add ."
+      message = "Site updated at #{Time.now.utc}"
+      system "git commit -m #{message.inspect}"
+      system "git remote add origin git@github.com:#{USERNAME}/#{REPO}.git"
+      system "git branch #{DESTINATION_BRANCH}"
+      system "git checkout #{DESTINATION_BRANCH}"
+      system "git push origin #{DESTINATION_BRANCH} --force"
+  
+      Dir.chdir pwd
     end
   end
 end
