@@ -12,9 +12,7 @@ baseurl: "/"
 title: America's Water Blog
 description: An inclusive online community reimagining infrastructure design and water management in the farms, cities, and watercourses of the future
 cover: assets/images/blog-cover.jpg
-#logo: assets/images/blog-icon.png
-#logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+favicon: assets/images/favicon.ico
 CNAME: americaswater.blog
 
 # Social info
