@@ -2,7 +2,7 @@
 author: jdossgollin
 cover:  assets/images/2020-07-24-markdown-tips/cover.jpeg
 date: 2020-07-24 19:00:00
-permalink: markdown-how-to
+permalink: 2020-07-24-markdown-how-to
 title: How to write blog posts with Markdown
 tags: [how-to-contribute]
 class: post-template
@@ -12,19 +12,20 @@ navigation: True
 subclass: 'post'
 ---
 
-All documents should be formatted in Markdown.
-Markdown is easy to use and write!
-See some examples [on GitHub](https://github.com/{{ site.username }}/{{ site.repo }}/tree/source/_posts) for examples of other posts.
-If you're looking for a Markdown editor, try [VS Code](https://code.visualstudio.com/){:target="_blank"} with the [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced){:target="_blank"} extension or [Typora](https://typora.io/){:target="_blank"} for a streamlined experience.
+Blog posts are written in Markdown, which is a human- and machine-readable language that's easy to use and write with!
+You've probably already used Markdown somewhere.
 
-For things like *italics*, **bold** text, `code`, and links see a good [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/){:target="_blank"}.
-There are a few special features worth mentioning.
+* You can see what the Markdown files corresponding to each blog post look like [on GitHub](https://github.com/{{ site.username }}/{{ site.repo }}/tree/source/_posts).
+* If you're looking for a text editor that works well with Markdown, try [VS Code](https://code.visualstudio.com/){:target="_blank"} with the [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced){:target="_blank"} extension or [Typora](https://typora.io/){:target="_blank"} for a streamlined experience.
+* For syntax like *italics*, **bold** text, `code`, and links see a good [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/){:target="_blank"}.
+
+There are a few special features we've implemented that are worth mentioning.
 And if you feel overwhelmed, don't worry -- we're here to help 😎!
 
-## Page Information
+## Post metadata
 
-At the top of every blog post is a block of information.
-For example, the information for this post looks like:
+At the top of every blog post is a block of information, or metadata, telling Jekyll (the program that builds the web site) how to treat your post.
+It will look something like this:
 
 ```yml
 ---
@@ -33,7 +34,7 @@ title: Title for your post
 date: YYYY-MM-DD HH:mm:ss
 tags: [tag-1, tag-2, tag-3]
 author: username # remember when you created an author username? It goes here!
-permalink: your-title-with-no-spaces
+permalink: YYYY-MM-DD-your-title-with-no-spaces # this will be the permanent link to your post
 navigation: True # don't change this
 layout: post # don't change this
 current: post # don't change this

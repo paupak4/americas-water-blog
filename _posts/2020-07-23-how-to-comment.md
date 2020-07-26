@@ -1,15 +1,15 @@
 ---
-layout: post
-current: post
-cover:  assets/images/2020-07-23-how-to-comment/cover.jpeg
-navigation: True
-title: Our comment policy
-date: 2020-07-23 11:00:00
-tags: [how-to-contribute]
-class: post-template
-subclass: 'post'
 author: jdossgollin
+cover:  assets/images/2020-07-23-how-to-comment/cover.jpeg
+date: 2020-07-23 11:00:00
 permalink: how-to-comment
+tags: [how-to-contribute]
+title: Our comment policy
+class: post-template
+current: post
+layout: post
+navigation: True
+subclass: 'post'
 ---
 
 We're building a digital community and want to hear your voice.
