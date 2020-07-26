@@ -2,7 +2,7 @@
 author: jdossgollin
 cover:  assets/images/2020-07-22-improvement/cover.jpeg
 date: 2020-07-22 11:00:00
-permalink: how-to-comment
+permalink: suggest-improvement
 tags: [how-to-contribute]
 title: Suggest an improvement
 layout: post
