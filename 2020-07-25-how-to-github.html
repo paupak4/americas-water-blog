@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Document Settings -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Base Meta -->
+    <!-- dynamically fixing the title for tag/author pages -->
+
+
+
+    <title>Submit a blog post using git and GitHub</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles'n'Scripts -->
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <style>
+        .hljs {
+            background: none;
+        }
+    </style>
+
+    <!--[if IE]>
+        <style>
+            p, ol, ul{
+                width: 100%;
+            }
+            blockquote{
+                width: 100%;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- This tag outputs SEO meta+structured data and other important settings -->
+    <meta name="description"
+    content="An inclusive online community reimagining infrastructure design and water management in the farms, cities, and watercourses of the future" />
+<link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/png" />
+<link rel="canonical"
+    href="/2020-07-25-how-to-github" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+
+<!--title below is coming from _includes/dynamic_title-->
+<meta property="og:site_name" content="America's Water Blog" />
+<meta property="og:type" content="website" />
+<meta property="og:title"
+    content="Submit a blog post using git and GitHub" />
+<meta property="og:description"
+    content="The best way to submit a blog post is as follows: Fork and clone the GitHub repository Write your blog post and add all multimedia to the directory View results on your computer (optional) Push your changes to your GitHub Create a pull request to merge your changes into the" />
+<meta property="og:url"
+    content="/2020-07-25-how-to-github" />
+<meta property="og:image"
+    content="/assets/images/2020-07-25-workflow/cover.jpeg" />
+<meta property="article:publisher" content="https://www.facebook.com/false" />
+<meta property="article:author" content="https://www.facebook.com/false" />
+<meta property="article:published_time"
+    content="2020-07-25T11:00:00+00:00" />
+<meta property="article:modified_time"
+    content="2020-07-25T11:00:00+00:00" />
+
+<meta property="article:tag" content="How-to-contribute" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title"
+    content="Submit a blog post using git and GitHub" />
+<meta name="twitter:description"
+    content="The best way to submit a blog post is as follows: Fork and clone the GitHub repository Write your blog post and add all multimedia to the directory View results on your computer (optional) Push your changes to your GitHub Create a pull request to merge your changes into the" />
+<meta name="twitter:url" content="/" />
+<meta name="twitter:image"
+    content="/assets/images/2020-07-25-workflow/cover.jpeg" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="America's Water Blog" />
+<meta name="twitter:label2" content="Filed under" />
+<meta name="twitter:data2" content="How-to-contribute" />
+<meta name="twitter:site" content="@false" />
+<meta name="twitter:creator" content="@false" />
+<meta property="og:image:width" content="1400" />
+<meta property="og:image:height" content="933" />
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Website",
+    "publisher": {
+        "@type": "Organization",
+        "name": "America's Water Blog",
+        "logo": "/"
+    },
+    "url": "/2020-07-25-how-to-github",
+    "image": {
+        "@type": "ImageObject",
+        "url": "/assets/images/2020-07-25-workflow/cover.jpeg",
+        "width": 2000,
+        "height": 666
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/2020-07-25-how-to-github"
+    },
+    "description": "The best way to submit a blog post is as follows: Fork and clone the GitHub repository Write your blog post and add all multimedia to the directory View results on your computer (optional) Push your changes to your GitHub Create a pull request to merge your changes into the"
+}
+    </script>
+
+<!--KATEX: https://github.com/linjer/jekyll-katex-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+    integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<meta name="generator" content="Jekyll 3.6.2" />
+<link rel="alternate" type="application/rss+xml"
+    title="Submit a blog post using git and GitHub"
+    href="/feed.xml" />
+
+<!--HACK to update code blocks-->
+<style>
+    .highlighter-rouge,
+    .highlight,
+    code {
+        width: 100%;
+    }
+</style>
+
+</head>
+
+<body
+    class="post-template">
+
+    <div class="site-wrapper">
+        <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+        <!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+        
+        
+        <a class="site-nav-logo" href="/">America's Water Blog</a>
+        
+        
+        
+        <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+    <li class="nav-about" role="menuitem"><a href="/tags/">Tags</a></li>
+    <li class="nav-about" role="menuitem"><a href="/authors/">Authors</a></li>
+    <li class="nav-about" role="menuitem"><a href="/tag/how-to-contribute/">Contribute</a></li>
+</ul>
+        
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+            
+            
+        </div>
+        
+    </div>
+</nav>
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article
+            class="post-full  tag-how-to-contribute post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date"
+                        datetime="25 July 2020">25 July 2020</time>
+                    
+                    <span class="date-divider">/</span>
+                    
+                    
+                    <a href='/tag/how-to-contribute/'>HOW-TO-CONTRIBUTE</a>
+                    
+                    
+                    
+                </section>
+                <h1 class="post-full-title">Submit a blog post using git and GitHub</h1>
+            </header>
+
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/2020-07-25-workflow/cover.jpeg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>The best way to submit a blog post is as follows:</p>
+
+<ol>
+  <li>Fork and clone the GitHub repository</li>
+  <li>Write your blog post and add all multimedia to the directory</li>
+  <li>View results on your computer (optional)</li>
+  <li>Push your changes to your GitHub</li>
+  <li>Create a pull request to merge your changes into the main website</li>
+  <li>Profit</li>
+</ol>
+
+<p>Sound tricky?
+It’s not as hard as it sounds.
+Learning to contribute to GitHub repositories is a valuable skill!</p>
+
+<p>Feeling stuck?
+We’re here to help 😉!
+Head over to the <a href="https://github.com/jdossgollin/americas-water-blog/issues" target="_blank">GitHub issues tab</a> and click the “New Issue” button.</p>
+
+<h2 id="before-we-get-started">Before we get started</h2>
+
+<ul>
+  <li>You’ll need a good text editor. There are lots of great ones out there but if you don’t have one <a href="https://code.visualstudio.com/" target="_blank">VS Code</a> is a good option</li>
+  <li>You’ll need a GitHub account. If you don’t have one, head over to <a href="https://github.com/" target="_blank">https://github.com/</a> and create one</li>
+  <li>You need git installed on your computer. If you haven’t used git before, <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a> is a great choice</li>
+</ul>
+
+<h2 id="fork-and-clone-the-repository">Fork and clone the repository</h2>
+
+<p>GitHub’s <a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo" target="_blank">documentation</a> explains that forking a repository allows you to freely experiment with changes without affecting the original project.
+In this case, forking the repository lets you create a copy of this web site’s source code, which you can modify to add your article.</p>
+
+<p>You can follow the instructions <a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository" target="_blank">here</a> to fork the repository <a href="https://github.com/jdossgollin/americas-water-blog">jdossgollin/americas-water-blog</a> and clone it onto your computer.</p>
+
+<h2 id="write-your-post">Write your post</h2>
+
+<p>Now you have a copy (“clone”) of the web site source code on your own computer.
+It’s time to write your blog post!</p>
+
+<h3 id="adding-yourself-to-the-authors-list">Adding yourself to the authors list</h3>
+
+<p>If this is your first time contributing to the blog, you first need to add your information to the list of authors!
+This lets the web site build a profile page for you, like <a href="/author/jdossgollin/" target="_blank">mine</a>.</p>
+
+<p>First, think up a username for yourself.
+It should be easy to remember!</p>
+
+<p>Next, find a <strong>square</strong> image of yourself that you like.
+Copy it into <code class="highlighter-rouge">assets/images/people</code>.
+If you see one there called <code class="highlighter-rouge">jdossgollin.jpg</code> you’re in the right place!
+Make this file your username (i.e., <code class="highlighter-rouge">jdossgollin</code> is my username so my picture is <code class="highlighter-rouge">jdossgollin.jpg</code>).</p>
+
+<p>Optionally, if you have a cool background image (think a cover photo like Facebook, Twitter, and LinkedIn), you can copy it here as well.
+Follow the same naming convention, like <code class="highlighter-rouge">jdossgollin-cover.jpg</code>.</p>
+
+<p>Last, open the file <code class="highlighter-rouge">_data/authors.yml</code> in your text editor.
+Add a block that looks like this and fill in the missing fields.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">your_user_name</span><span class="pi">:</span> <span class="c1"># update this</span>
+  <span class="na">username</span><span class="pi">:</span> <span class="s">your_user_name</span> <span class="c1"># update this</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Your full name</span>
+  <span class="na">url_full</span><span class="pi">:</span> <span class="s">A URL linking to your web site or profile</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">a short version of the URL</span>
+  <span class="na">bio</span><span class="pi">:</span> <span class="s">A short description of yourself</span>
+  <span class="na">picture</span><span class="pi">:</span> <span class="s">assets/images/people/your_user_name.jpg</span> <span class="c1"># replace your_user_name</span>
+  <span class="na">twitter</span><span class="pi">:</span> <span class="s">jdossgollin</span> <span class="c1"># your handle here</span>
+  <span class="na">cover</span><span class="pi">:</span> <span class="s">assets/images/people/your_user_name-cover.jpg</span> <span class="c1"># replace your_user_name</span>
+</code></pre></div></div>
+
+<p>Be aware that <code class="highlighter-rouge">.yml</code> files are sticklers about indentation and syntax.
+You may wish to wrap your <code class="highlighter-rouge">bio</code> in double quotation marks: <code class="highlighter-rouge">bio: "long string here"</code>.</p>
+
+<h3 id="adding-tags">Adding tags</h3>
+
+<p>Every post is organized with one or more tags that explain what kind of post it is.
+Just like every author has a profile page, every tag gets a profile page that shows off all the posts that are tagged with it.
+Tags are organized just like authors, with a profile page of their own.</p>
+
+<p>First, take a look at the tags that are already on the web site <a href="/tags/" target="_blank">here</a>.
+If your post fits one or more of these tags, skip to the next section.</p>
+
+<p>If you want to create a new tag, then the process is very similar to adding an author.
+First, think of a name – with no spaces – for the tag.
+Shorter is better.
+Next, find a cover photo for the tag and add it to <code class="highlighter-rouge">assets/images/tags/</code>.
+It should be named after your tag, like <code class="highlighter-rouge">how-to-contribute.jpg</code>.
+Last, open <code class="highlighter-rouge">_data/tags.yml</code> in your text editor and create a new tag.
+It should look like this:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">your-tag-name</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">your-tag-name</span>
+  <span class="na">long_name</span><span class="pi">:</span> <span class="s">A title for your tag</span>
+  <span class="na">description</span><span class="pi">:</span> <span class="s">A longer description of your tag</span>
+  <span class="na">cover</span><span class="pi">:</span> <span class="s">assets/images/tags/your-tag-name.jpg</span>
+
+</code></pre></div></div>
+
+<h3 id="write-the-post">Write the post</h3>
+
+<p>Phew, that was a lot of work.
+But you made it and you didn’t give up 🎉🎊!
+Now it’s time to write the blog post!</p>
+
+<p>As discussed in the <a href="/markdown-how-to">Guide to Writing in Markdown</a> (you’ll want to read that), blog posts should be written in Markdown format.
+Markdown is easy to write with, has minimal syntax, and is converted to HTML on the back end to look great on the web.</p>
+
+<p>First, create a blank file in the <code class="highlighter-rouge">_posts</code> directory.
+Name it <code class="highlighter-rouge">YYYY-MM-DD-your-title-with-no-spaces.md</code>.</p>
+
+<p>Second, create a folder to store any pictures for your blog post as <code class="highlighter-rouge">assets/images/YYYY-MM-DD-your-title-with-no-spaces/</code>.</p>
+
+<p>Next, find a cover photo for your blog post.
+Save it that directory as and name it <code class="highlighter-rouge">cover</code> so the full path is <code class="highlighter-rouge">assets/images/YYYY-MM-DD-your-title-with-no-spaces/cover.png</code> (PNG, JPG, it’s all fine).</p>
+
+<p>Next, you need to add post information.
+Add a block that looks like this to the very top of your post and update the <code class="highlighter-rouge">cover</code>, <code class="highlighter-rouge">title</code>, <code class="highlighter-rouge">date</code>, <code class="highlighter-rouge">tags</code>, <code class="highlighter-rouge">author</code>, and <code class="highlighter-rouge">permalink</code> fields.
+Paste the others as they are.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">cover</span><span class="pi">:</span>  <span class="s">assets/images/YYYY-MM-DD-your-title-with-no-spaces/cover.jpg</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Title for your post</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">YYYY-MM-DD HH:mm:ss</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">tag-1</span><span class="pi">,</span> <span class="nv">tag-2</span><span class="pi">,</span> <span class="nv">tag-3</span><span class="pi">]</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">username</span> <span class="c1"># remember when you created an author username? It goes here!</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">YYYY-MM-DD-your-title-with-no-spaces</span>
+<span class="na">navigation</span><span class="pi">:</span> <span class="s">True</span> <span class="c1"># don't change this</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span> <span class="c1"># don't change this</span>
+<span class="na">current</span><span class="pi">:</span> <span class="s">post</span> <span class="c1"># don't change this</span>
+<span class="na">class</span><span class="pi">:</span> <span class="s">post-template</span> <span class="c1"># don't change this</span>
+<span class="na">subclass</span><span class="pi">:</span> <span class="s1">'</span><span class="s">post'</span> <span class="c1"># don't change this</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>That’s all the setup required.
+Go ahead and write your amazing content!
+Remember to check out our <a href="/markdown-how-to">Guide to Writing in Markdown</a> to see how to add math, images, and more!</p>
+
+<h2 id="build-locally-optional">Build locally (optional)</h2>
+
+<p>If you’re not comfortable at the command line skip, this step – it’s optional!
+Come back in a few months when you feel a bit more confident 💪🧠.</p>
+
+<p>You’ll need Ruby installed on your machine.
+See <a href="https://www.ruby-lang.org/en/documentation/installation/" target="_blank">their documentation</a> – on OSX it’s as simple as <code class="highlighter-rouge">brew install ruby</code>.</p>
+
+<p>Next, in the terminal open up the <code class="highlighter-rouge">americas-water-blog</code> directory.
+To install the files specified in the <code class="highlighter-rouge">Gemfile</code> run <code class="highlighter-rouge">bundle install</code>.</p>
+
+<p>Once that’s done, you can run the site!
+Run <code class="highlighter-rouge">bundle exec rake site:watch</code>.
+You should see a line that looks like</p>
+
+<pre><code class="language-misc">Server address: http://127.0.0.1:4000//
+Server running... press ctrl-c to stop.
+</code></pre>
+
+<p>In that case, open <code class="highlighter-rouge">http://127.0.0.1:4000//</code> in your browser.
+You should see a small version of the site that updates in real time as you make changes.
+This is a great way to make sure that your post looks just the way you want.</p>
+
+<h2 id="push-your-changes">Push your changes</h2>
+
+<p>Now that you’ve written a thoughtful and incisive post, it’s time to push your changes.
+Specifically, this will push the changes from your computer to your GitHub account.</p>
+
+<p>If you’re using GitHub Desktop, then see the instructions <a href="https://docs.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop#step-6-make-commit-and-push-changes" target="_blank">here</a> to commit and push your changes.
+It should take just two clicks!
+You’ll see a box where you’re invited to write a summary of your changes.
+Write a helpful message like “Wrote first draft of post on how to submit a post”.</p>
+
+<h2 id="create-a-pull-request">Create a pull request</h2>
+
+<p>The GitHub <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests" target="_blank">documentation</a> says</p>
+
+<blockquote>
+  <p>Pull requests let you tell others about changes you’ve pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.</p>
+</blockquote>
+
+<p>The <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request" target="_blank">documentation on Pull Requests</a> also adds that</p>
+
+<blockquote>
+  <p>Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work.</p>
+</blockquote>
+
+<p>To create a pull request, follow directions <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request" target="_blank">here</a>.
+This will submit your changes for approval.
+We may give you feedback on your post or ask for changes to your code (for example, if you forgot a <code class="highlighter-rouge">:</code> in the <code class="highlighter-rouge">authors.yml</code> page).
+You can make those changes on your computer, push them to GitHub, and they will show up on the pull request – no need to delete it!</p>
+
+<p>Then we’ll approve the pull request.
+The web site will be rebuilt automatically!</p>
+
+<h2 id="profit">Profit</h2>
+
+<p>Your wallet may not be any thicker, but your software skills are looking a little sharper and you’ve shared your water vision with the world!
+Go drink a tall glass of cool water – you’ve earned it 🥛!</p>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                
+                <section class="author-card">
+                    
+                    <img class="author-profile-image" src="/assets/images/people/jdossgollin.jpg"
+                        alt="jdossgollin" />
+                    
+                    <section class="author-card-content">
+                        <h4 class="author-card-name"><a
+                                href="/author/jdossgollin">James Doss-Gollin</a></h4>
+                        
+                        <p>I use data science, decision science, and earth science to design adaptive infrastructure for resilient communities</p>
+                        
+                    </section>
+                </section>
+                <div class="post-full-footer-right">
+                    <a class="author-card-button" href="/author/jdossgollin">Read More</a>
+                </div>
+                
+                
+                <!-- /author  -->
+            </footer>
+        </article>
+
+    </div>
+</main>
+
+<!-- _includes/utterances-comment.html -->
+
+
+<script src="https://utteranc.es/client.js" repo="jdossgollin/americas-water-blog"
+    issue-term="title" theme="github-light" label="/2020-07-25-how-to-github"
+    crossorigin="anonymous" async></script>
+
+
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+            
+            
+            
+            <article class="read-next-card" 
+                style="background-image: url(/assets/images/blog-cover.jpg)" >
+                <header class="read-next-card-header">
+                    <small class="read-next-card-header-sitetitle">&mdash; America's Water Blog &mdash;</small>
+                    
+                    <h3 class="read-next-card-header-title"><a
+                            href="/tag/how-to-contribute/">How-to-contribute</a>
+                    </h3>
+                    
+                </header>
+                <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                <div class="read-next-card-content">
+                    <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/2020-07-24-markdown-how-to">How to write blog posts with Markdown</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/how-to-comment">Our comment policy</a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="/2020-07-22-suggest-improvement">Suggest an improvement</a></li>
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+
+                <footer class="read-next-card-footer">
+                    <a href="/tag/how-to-contribute/">
+                        
+                        See all 3 posts →
+                        
+                    </a>
+                </footer>
+            </article>
+            
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+            
+
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/2020-07-24-markdown-how-to">
+                <div class="post-card-image" style="background-image: url(/assets/images/2020-07-24-markdown-tips/cover.jpeg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/2020-07-24-markdown-how-to">
+                <header class="post-card-header">
+                    
+                        
+                            
+                                <span class="post-card-tags">How-to-contribute</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">How to write blog posts with Markdown</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    
+                        <p></p>
+                    
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/people/jdossgollin.jpg" alt="James Doss-Gollin" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/jdossgollin/">James Doss-Gollin</a>
+                        </span>
+                    
+                
+                <span class="reading-time">
+                    
+                    
+                      1 min read
+                    
+                </span>
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="/">
+            
+            <span>America's Water Blog</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Submit a blog post using git and GitHub</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw"
+            href="https://twitter.com/share?text=Submit+a+blog+post+using+git+and+GitHub&amp;url=https://americaswater.blog2020-07-25-how-to-github"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+        </a>
+        <a class="floating-header-share-fb"
+            href="https://www.facebook.com/sharer/sharer.php?u=https://americaswater.blog2020-07-25-how-to-github"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+        </a>
+    </div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+        <!-- Previous/next page links - displayed on every page -->
+        
+
+        <!-- The footer at the very bottom of the screen -->
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="/">America's Water Blog</a> &copy;
+                    2020</section>
+                <section class="poweredby">Published with <a href="https://jekyllrb.com/">Jekyll</a> &
+                    <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
+                    <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
+                <nav class="site-footer-nav">
+                    <a href="/">Latest Posts</a>
+                    
+                    
+                    <a href="mailto:jdossgollin.psu@gmail.com" target="_blank">Contact</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- The big email subscribe modal content -->
+    
+
+    <!-- highlight.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
+    <script>$(document).ready(function () {
+            $('pre code').each(function (i, block) {
+                hljs.highlightBlock(block);
+            });
+        });</script>
+
+    <!-- Paginator increased to "infinit" in _config.yml -->
+    <!-- if paginator.posts  -->
+    <!-- <script>
+        var maxPages = parseInt('');
+    </script>
+    <script src="/assets/js/infinitescroll.js"></script> -->
+    <!-- /endif -->
+
+    
+
+
+    <!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+    
+    <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+    
+
+    <!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+    <!-- ghost_foot -->
+
+</body>
+
+</html>

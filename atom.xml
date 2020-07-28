@@ -1,28 +1,74 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.name | xml_escape }} - Articles</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <title> - Articles</title>
+    <description>An inclusive online community reimagining infrastructure design and water management in the farms, cities, and watercourses of the future</description>
     <link>
-    {{ site.baseurl }}</link>
-    {% for post in site.posts %}
-      {% unless post.link %}
+    /</link>
+    
+      
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        {% if post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
-        {% else %}
-          <description>{{ post.content | xml_escape }}</description>
-        {% endif %}
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <title>Submit a blog post using git and GitHub</title>
+        
+          <description>&lt;p&gt;The best way to submit a blog post is as follows:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 25 Jul 2020 11:00:00 +0000</pubDate>
         <link>
-        {{ site.baseurl }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        //2020-07-25-how-to-github</link>
+        <guid isPermaLink="true">/2020-07-25-how-to-github</guid>
       </item>
-      {% endunless %}
-    {% endfor %}
+      
+    
+      
+      <item>
+        <title>How to write blog posts with Markdown</title>
+        
+          <description>&lt;p&gt;Blog posts are written in Markdown, which is a human- and machine-readable language that’s easy to use and write with!
+You’ve probably already used Markdown somewhere.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 24 Jul 2020 19:00:00 +0000</pubDate>
+        <link>
+        //2020-07-24-markdown-how-to</link>
+        <guid isPermaLink="true">/2020-07-24-markdown-how-to</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Our comment policy</title>
+        
+          <description>&lt;p&gt;We’re building a digital community and want to hear your voice.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Jul 2020 11:00:00 +0000</pubDate>
+        <link>
+        //how-to-comment</link>
+        <guid isPermaLink="true">/how-to-comment</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Suggest an improvement</title>
+        
+          <description>&lt;p&gt;Did you spot a typo in one of our posts?
+Is a link no longer working?
+Do you have suggestions for this site?
+If so, head to the &lt;a href=&quot;https://github.com/jdossgollin/americas-water-blog/issues&quot; target=&quot;_blank&quot;&gt;Repository Issues Tab&lt;/a&gt; and create a new issue to suggest improvements.
+You’ll need a GitHub account, but they’re free (and useful!)&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 22 Jul 2020 11:00:00 +0000</pubDate>
+        <link>
+        //2020-07-22-suggest-improvement</link>
+        <guid isPermaLink="true">/2020-07-22-suggest-improvement</guid>
+      </item>
+      
+    
   </channel>
 </rss>

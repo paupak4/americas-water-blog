@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
+  <link href="/tag/how-to-contribute/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/" rel="alternate" type="text/html" />
+  <updated>2020-07-28T02:04:56+00:00</updated>
+  <id>/tag/how-to-contribute/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">America’s Water Blog | </title>
+  
+
+  
+    <subtitle>An inclusive online community reimagining infrastructure design and water management in the farms, cities, and watercourses of the future</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Submit a blog post using git and GitHub</title>
+      <link href="/2020-07-25-how-to-github" rel="alternate" type="text/html" title="Submit a blog post using git and GitHub" />
+      <published>2020-07-25T11:00:00+00:00</published>
+      <updated>2020-07-25T11:00:00+00:00</updated>
+      <id>/workflow</id>
+      <content type="html" xml:base="/2020-07-25-how-to-github">&lt;p&gt;The best way to submit a blog post is as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fork and clone the GitHub repository&lt;/li&gt;
+  &lt;li&gt;Write your blog post and add all multimedia to the directory&lt;/li&gt;
+  &lt;li&gt;View results on your computer (optional)&lt;/li&gt;
+  &lt;li&gt;Push your changes to your GitHub&lt;/li&gt;
+  &lt;li&gt;Create a pull request to merge your changes into the main website&lt;/li&gt;
+  &lt;li&gt;Profit&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Sound tricky?
+It’s not as hard as it sounds.
+Learning to contribute to GitHub repositories is a valuable skill!&lt;/p&gt;
+
+&lt;p&gt;Feeling stuck?
+We’re here to help 😉!
+Head over to the &lt;a href=&quot;https://github.com/jdossgollin/americas-water-blog/issues&quot; target=&quot;_blank&quot;&gt;GitHub issues tab&lt;/a&gt; and click the “New Issue” button.&lt;/p&gt;
+
+&lt;h2 id=&quot;before-we-get-started&quot;&gt;Before we get started&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You’ll need a good text editor. There are lots of great ones out there but if you don’t have one &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot;&gt;VS Code&lt;/a&gt; is a good option&lt;/li&gt;
+  &lt;li&gt;You’ll need a GitHub account. If you don’t have one, head over to &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;https://github.com/&lt;/a&gt; and create one&lt;/li&gt;
+  &lt;li&gt;You need git installed on your computer. If you haven’t used git before, &lt;a href=&quot;https://desktop.github.com/&quot; target=&quot;_blank&quot;&gt;GitHub Desktop&lt;/a&gt; is a great choice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;fork-and-clone-the-repository&quot;&gt;Fork and clone the repository&lt;/h2&gt;
+
+&lt;p&gt;GitHub’s &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/fork-a-repo&quot; target=&quot;_blank&quot;&gt;documentation&lt;/a&gt; explains that forking a repository allows you to freely experiment with changes without affecting the original project.
+In this case, forking the repository lets you create a copy of this web site’s source code, which you can modify to add your article.&lt;/p&gt;
+
+&lt;p&gt;You can follow the instructions &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; to fork the repository &lt;a href=&quot;https://github.com/jdossgollin/americas-water-blog&quot;&gt;jdossgollin/americas-water-blog&lt;/a&gt; and clone it onto your computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;write-your-post&quot;&gt;Write your post&lt;/h2&gt;
+
+&lt;p&gt;Now you have a copy (“clone”) of the web site source code on your own computer.
+It’s time to write your blog post!&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-yourself-to-the-authors-list&quot;&gt;Adding yourself to the authors list&lt;/h3&gt;
+
+&lt;p&gt;If this is your first time contributing to the blog, you first need to add your information to the list of authors!
+This lets the web site build a profile page for you, like &lt;a href=&quot;/author/jdossgollin/&quot; target=&quot;_blank&quot;&gt;mine&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, think up a username for yourself.
+It should be easy to remember!&lt;/p&gt;
+
+&lt;p&gt;Next, find a &lt;strong&gt;square&lt;/strong&gt; image of yourself that you like.
+Copy it into &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images/people&lt;/code&gt;.
+If you see one there called &lt;code class=&quot;highlighter-rouge&quot;&gt;jdossgollin.jpg&lt;/code&gt; you’re in the right place!
+Make this file your username (i.e., &lt;code class=&quot;highlighter-rouge&quot;&gt;jdossgollin&lt;/code&gt; is my username so my picture is &lt;code class=&quot;highlighter-rouge&quot;&gt;jdossgollin.jpg&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Optionally, if you have a cool background image (think a cover photo like Facebook, Twitter, and LinkedIn), you can copy it here as well.
+Follow the same naming convention, like &lt;code class=&quot;highlighter-rouge&quot;&gt;jdossgollin-cover.jpg&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Last, open the file &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/authors.yml&lt;/code&gt; in your text editor.
+Add a block that looks like this and fill in the missing fields.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;your_user_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# update this&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your_user_name&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# update this&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your full name&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url_full&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;A URL linking to your web site or profile&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;a short version of the URL&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;A short description of yourself&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;picture&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/images/people/your_user_name.jpg&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# replace your_user_name&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jdossgollin&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# your handle here&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/images/people/your_user_name-cover.jpg&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# replace your_user_name&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Be aware that &lt;code class=&quot;highlighter-rouge&quot;&gt;.yml&lt;/code&gt; files are sticklers about indentation and syntax.
+You may wish to wrap your &lt;code class=&quot;highlighter-rouge&quot;&gt;bio&lt;/code&gt; in double quotation marks: &lt;code class=&quot;highlighter-rouge&quot;&gt;bio: &quot;long string here&quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-tags&quot;&gt;Adding tags&lt;/h3&gt;
+
+&lt;p&gt;Every post is organized with one or more tags that explain what kind of post it is.
+Just like every author has a profile page, every tag gets a profile page that shows off all the posts that are tagged with it.
+Tags are organized just like authors, with a profile page of their own.&lt;/p&gt;
+
+&lt;p&gt;First, take a look at the tags that are already on the web site &lt;a href=&quot;/tags/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+If your post fits one or more of these tags, skip to the next section.&lt;/p&gt;
+
+&lt;p&gt;If you want to create a new tag, then the process is very similar to adding an author.
+First, think of a name – with no spaces – for the tag.
+Shorter is better.
+Next, find a cover photo for the tag and add it to &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images/tags/&lt;/code&gt;.
+It should be named after your tag, like &lt;code class=&quot;highlighter-rouge&quot;&gt;how-to-contribute.jpg&lt;/code&gt;.
+Last, open &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/tags.yml&lt;/code&gt; in your text editor and create a new tag.
+It should look like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;your-tag-name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;your-tag-name&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;long_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;A title for your tag&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;A longer description of your tag&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/images/tags/your-tag-name.jpg&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;write-the-post&quot;&gt;Write the post&lt;/h3&gt;
+
+&lt;p&gt;Phew, that was a lot of work.
+But you made it and you didn’t give up 🎉🎊!
+Now it’s time to write the blog post!&lt;/p&gt;
+
+&lt;p&gt;As discussed in the &lt;a href=&quot;/markdown-how-to&quot;&gt;Guide to Writing in Markdown&lt;/a&gt; (you’ll want to read that), blog posts should be written in Markdown format.
+Markdown is easy to write with, has minimal syntax, and is converted to HTML on the back end to look great on the web.&lt;/p&gt;
+
+&lt;p&gt;First, create a blank file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory.
+Name it &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-your-title-with-no-spaces.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Second, create a folder to store any pictures for your blog post as &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images/YYYY-MM-DD-your-title-with-no-spaces/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, find a cover photo for your blog post.
+Save it that directory as and name it &lt;code class=&quot;highlighter-rouge&quot;&gt;cover&lt;/code&gt; so the full path is &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images/YYYY-MM-DD-your-title-with-no-spaces/cover.png&lt;/code&gt; (PNG, JPG, it’s all fine).&lt;/p&gt;
+
+&lt;p&gt;Next, you need to add post information.
+Add a block that looks like this to the very top of your post and update the &lt;code class=&quot;highlighter-rouge&quot;&gt;cover&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;permalink&lt;/code&gt; fields.
+Paste the others as they are.&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;assets/images/YYYY-MM-DD-your-title-with-no-spaces/cover.jpg&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Title for your post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;YYYY-MM-DD HH:mm:ss&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag-1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag-2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag-3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# remember when you created an author username? It goes here!&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;YYYY-MM-DD-your-title-with-no-spaces&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;navigation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;True&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post-template&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;subclass&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s all the setup required.
+Go ahead and write your amazing content!
+Remember to check out our &lt;a href=&quot;/markdown-how-to&quot;&gt;Guide to Writing in Markdown&lt;/a&gt; to see how to add math, images, and more!&lt;/p&gt;
+
+&lt;h2 id=&quot;build-locally-optional&quot;&gt;Build locally (optional)&lt;/h2&gt;
+
+&lt;p&gt;If you’re not comfortable at the command line skip, this step – it’s optional!
+Come back in a few months when you feel a bit more confident 💪🧠.&lt;/p&gt;
+
+&lt;p&gt;You’ll need Ruby installed on your machine.
+See &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot; target=&quot;_blank&quot;&gt;their documentation&lt;/a&gt; – on OSX it’s as simple as &lt;code class=&quot;highlighter-rouge&quot;&gt;brew install ruby&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, in the terminal open up the &lt;code class=&quot;highlighter-rouge&quot;&gt;americas-water-blog&lt;/code&gt; directory.
+To install the files specified in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once that’s done, you can run the site!
+Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec rake site:watch&lt;/code&gt;.
+You should see a line that looks like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-misc&quot;&gt;Server address: http://127.0.0.1:4000//
+Server running... press ctrl-c to stop.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In that case, open &lt;code class=&quot;highlighter-rouge&quot;&gt;http://127.0.0.1:4000//&lt;/code&gt; in your browser.
+You should see a small version of the site that updates in real time as you make changes.
+This is a great way to make sure that your post looks just the way you want.&lt;/p&gt;
+
+&lt;h2 id=&quot;push-your-changes&quot;&gt;Push your changes&lt;/h2&gt;
+
+&lt;p&gt;Now that you’ve written a thoughtful and incisive post, it’s time to push your changes.
+Specifically, this will push the changes from your computer to your GitHub account.&lt;/p&gt;
+
+&lt;p&gt;If you’re using GitHub Desktop, then see the instructions &lt;a href=&quot;https://docs.github.com/en/desktop/getting-started-with-github-desktop/creating-your-first-repository-using-github-desktop#step-6-make-commit-and-push-changes&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; to commit and push your changes.
+It should take just two clicks!
+You’ll see a box where you’re invited to write a summary of your changes.
+Write a helpful message like “Wrote first draft of post on how to submit a post”.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-a-pull-request&quot;&gt;Create a pull request&lt;/h2&gt;
+
+&lt;p&gt;The GitHub &lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests&quot; target=&quot;_blank&quot;&gt;documentation&lt;/a&gt; says&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pull requests let you tell others about changes you’ve pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request&quot; target=&quot;_blank&quot;&gt;documentation on Pull Requests&lt;/a&gt; also adds that&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To create a pull request, follow directions &lt;a href=&quot;https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+This will submit your changes for approval.
+We may give you feedback on your post or ask for changes to your code (for example, if you forgot a &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;authors.yml&lt;/code&gt; page).
+You can make those changes on your computer, push them to GitHub, and they will show up on the pull request – no need to delete it!&lt;/p&gt;
+
+&lt;p&gt;Then we’ll approve the pull request.
+The web site will be rebuilt automatically!&lt;/p&gt;
+
+&lt;h2 id=&quot;profit&quot;&gt;Profit&lt;/h2&gt;
+
+&lt;p&gt;Your wallet may not be any thicker, but your software skills are looking a little sharper and you’ve shared your water vision with the world!
+Go drink a tall glass of cool water – you’ve earned it 🥛!&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>James Doss-Gollin</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="how-to-contribute" />
+      
+
+      
+        <summary type="html">The best way to submit a blog post is as follows:</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">How to write blog posts with Markdown</title>
+      <link href="/2020-07-24-markdown-how-to" rel="alternate" type="text/html" title="How to write blog posts with Markdown" />
+      <published>2020-07-24T19:00:00+00:00</published>
+      <updated>2020-07-24T19:00:00+00:00</updated>
+      <id>/markdown-tips</id>
+      <content type="html" xml:base="/2020-07-24-markdown-how-to">&lt;p&gt;Blog posts are written in Markdown, which is a human- and machine-readable language that’s easy to use and write with!
+You’ve probably already used Markdown somewhere.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You can see what the Markdown files corresponding to each blog post look like &lt;a href=&quot;https://github.com/jdossgollin/americas-water-blog/tree/source/_posts&quot;&gt;on GitHub&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;If you’re looking for a text editor that works well with Markdown, try &lt;a href=&quot;https://code.visualstudio.com/&quot; target=&quot;_blank&quot;&gt;VS Code&lt;/a&gt; with the &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced&quot; target=&quot;_blank&quot;&gt;Markdown Preview Enhanced&lt;/a&gt; extension or &lt;a href=&quot;https://typora.io/&quot; target=&quot;_blank&quot;&gt;Typora&lt;/a&gt; for a streamlined experience.&lt;/li&gt;
+  &lt;li&gt;For syntax like &lt;em&gt;italics&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt; text, &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt;, and links see a good &lt;a href=&quot;https://www.markdownguide.org/cheat-sheet/&quot; target=&quot;_blank&quot;&gt;Markdown Cheat Sheet&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are a few special features we’ve implemented that are worth mentioning.
+And if you feel overwhelmed, don’t worry – we’re here to help 😎!&lt;/p&gt;
+
+&lt;h2 id=&quot;post-metadata&quot;&gt;Post metadata&lt;/h2&gt;
+
+&lt;p&gt;At the top of every blog post is a block of information, or metadata, telling Jekyll (the program that builds the web site) how to treat your post.
+It will look something like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;cover&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;assets/images/YYYY-MM-DD-your-title-with-no-spaces/cover.jpg&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Title for your post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;YYYY-MM-DD HH:mm:ss&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;tag-1&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag-2&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;tag-3&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# remember when you created an author username? It goes here!&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;permalink&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;YYYY-MM-DD-your-title-with-no-spaces&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# this will be the permanent link to your post&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;navigation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;True&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;post-template&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;subclass&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# don't change this&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Most of them you should copy and paste exactly.
+However:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;author&lt;/code&gt;: If you’re writing a post for the first time, create a username and add it with your information to &lt;code class=&quot;highlighter-rouge&quot;&gt;/_data/authors.yml&lt;/code&gt;. Then set this field to the username you created&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cover&lt;/code&gt;: an image to use with your post on the homepage&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;: Set the date you would like to have associated with your post&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink&lt;/code&gt;: this will be the link to your post so choose something short and unique (no spaces!)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tags&lt;/code&gt;: You can add any number of tags to your image. If you’re creating a new tag, you should also add a description to &lt;code class=&quot;highlighter-rouge&quot;&gt;/_data/tags.yml&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt;: The title of your post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;If you’re using images, it’s &lt;strong&gt;vital&lt;/strong&gt; that you post an image that you have permission to share – we don’t want to get in legal trouble!
+There are two ways to do this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;add an image that you have taken (or that you have permission to share) to the repository (put it in &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images&lt;/code&gt; and give it a specific, useful name – perhaps one that relates to the name of your post). then, link to it as &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images/file_name.sufix&lt;/code&gt; when you’re including it (see syntax below)&lt;/li&gt;
+  &lt;li&gt;embed an image from a site like Wikipedia or Flickr that provides open-access images.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To add an image, you just use regular markdown syntax:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alt text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;image-url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you add &lt;code class=&quot;highlighter-rouge&quot;&gt;#full&lt;/code&gt; to the end of the image URL, you can get cool full-width images:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;full width image of drought&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;https://upload.wikimedia.org/wikipedia/commons/4/4e/Drought_in_the_Valley.JPG#full&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/4/4e/Drought_in_the_Valley.JPG#full&quot; alt=&quot;full width image of drought&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sites like Flickr also provide code to embed an image.
+Copying and pasting in the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; code from their site gives nice results like:&lt;/p&gt;
+
+&lt;p&gt;&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/bertknot/8180659592/in/gallery-188632717@N05-72157714493410492/&quot; title=&quot;maaslant kering (5)&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/8200/8180659592_ec99b73c75.jpg&quot; width=&quot;500&quot; height=&quot;309&quot; alt=&quot;maaslant kering (5)&quot; /&gt;&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s how to link to a local image&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;stock photo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;assets/images/2020-07-24-markdown-tips/cover.jpeg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2020-07-24-markdown-tips/cover.jpeg&quot; alt=&quot;stock photo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;math&quot;&gt;Math&lt;/h2&gt;
+
+&lt;p&gt;You can embed math using &lt;a href=&quot;https://katex.org/&quot; target=&quot;_blank&quot;&gt;KaTeX&lt;/a&gt;.
+For example,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jekyll&quot;&gt;{% katex display %}
+c = \pm\sqrt{a^2 + b^2}
+{% endkatex %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will render as&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;±&lt;/mo&gt;&lt;msqrt&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/msqrt&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;
+c = \pm\sqrt{a^2 + b^2}
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.43056em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.2399999999999998em;vertical-align:-0.177736em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;±&lt;/span&gt;&lt;span class=&quot;mord sqrt&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.0622639999999999em;&quot;&gt;&lt;span class=&quot;svg-align&quot; style=&quot;top:-3.2em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.2em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot; style=&quot;padding-left:1em;&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.740108em;&quot;&gt;&lt;span style=&quot;top:-2.9890000000000003em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2222222222222222em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.740108em;&quot;&gt;&lt;span style=&quot;top:-2.9890000000000003em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.0222640000000003em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:3.2em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;hide-tail&quot; style=&quot;min-width:1.02em;height:1.28em;&quot;&gt;&lt;svg width=&quot;400em&quot; height=&quot;1.28em&quot; viewBox=&quot;0 0 400000 1296&quot; preserveAspectRatio=&quot;xMinYMin slice&quot;&gt;&lt;path d=&quot;M263,681c0.7,0,18,39.7,52,119 c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120 c340,-704.7,510.7,-1060.3,512,-1067 l0 -0 c4.7,-7.3,11,-11,19,-11 H40000v40H1012.3 s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232 c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1 s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26 c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z M1001 80h400000v40h-400000z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.177736em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&quot;https://github.com/linjer/jekyll-katex&quot;&gt;https://github.com/linjer/jekyll-katex&lt;/a&gt; for more sophisticated syntax including inline math and shortcuts if you’re writing a lot of equations.&lt;/p&gt;
+
+&lt;h2 id=&quot;citations&quot;&gt;Citations&lt;/h2&gt;
+
+&lt;p&gt;If you’re citing an academic document, you can do so using the &lt;a href=&quot;https://github.com/inukshuk/jekyll-scholar&quot; target=&quot;_blank&quot;&gt;jekyll-scholar&lt;/a&gt; plugin.
+To do so, you first need to put the bibtex entry for the work you would like to cite in &lt;code class=&quot;highlighter-rouge&quot;&gt;_bibliography/library.bib&lt;/code&gt;.
+For example, add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bibtex&quot;&gt;@article{doss-gollin_fatalism:2020,
+  title = {Adaptation over Fatalism: Leveraging High-Impact Climate Disasters to Boost Societal Resilience},
+  author = {{Doss-Gollin}, James and Farnham, David J. and Ho, Michelle and Lall, Upmanu},
+  year = {2020},
+  volume = {146},
+  doi = {10.1061/(ASCE)WR.1943-5452.0001190},
+  journal = {Journal of Water Resources Planning and Management},
+  number = {4},
+  open = {true}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then I can cite it using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jekyll&quot;&gt;{% cite doss-gollin_fatalism:2020 %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;which renders as &lt;a class=&quot;citation&quot; href=&quot;#doss-gollin_fatalism:2020&quot;&gt;(Doss-Gollin et al., 2020)&lt;/a&gt;.
+To add a bibliography, just add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-jekyll&quot;&gt;{% bibliography --cited %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;at the end of your document and it will render as&lt;/p&gt;
+
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;doss-gollin_fatalism:2020&quot;&gt;Doss-Gollin, J., Farnham, D. J., Ho, M., &amp;amp; Lall, U. (2020). Adaptation over Fatalism: Leveraging High-Impact Climate Disasters to Boost Societal Resilience. &lt;i&gt;Journal of Water Resources Planning and Management&lt;/i&gt;, &lt;i&gt;146&lt;/i&gt;(4). https://doi.org/10.1061/(ASCE)WR.1943-5452.0001190&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+
+&lt;p&gt;You may want to reference some material that isn’t an academic paper or clarify a subtle point.
+You can do so using footnotes.
+To add a footnote to markdown, just type type &lt;code class=&quot;highlighter-rouge&quot;&gt;[^some_key]&lt;/code&gt; after your text. &lt;code class=&quot;highlighter-rouge&quot;&gt;some_key&lt;/code&gt; can be a unique identifier for each footnote, since you can have an unlimited number of footnotes.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;
+Then somewhere below type&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[^some_key]: This is an example of a footnote
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and at the bottom of the page it will render as&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;This is an example of a footnote &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>James Doss-Gollin</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="how-to-contribute" />
+      
+
+      
+        <summary type="html">Blog posts are written in Markdown, which is a human- and machine-readable language that’s easy to use and write with! You’ve probably already used Markdown somewhere.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Our comment policy</title>
+      <link href="/how-to-comment" rel="alternate" type="text/html" title="Our comment policy" />
+      <published>2020-07-23T11:00:00+00:00</published>
+      <updated>2020-07-23T11:00:00+00:00</updated>
+      <id>/how-to-comment</id>
+      <content type="html" xml:base="/how-to-comment">&lt;p&gt;We’re building a digital community and want to hear your voice.&lt;/p&gt;
+
+&lt;p&gt;At the bottom of every blog post is a comment section.
+It’s built on &lt;a href=&quot;https://github.com/utterance/utterances&quot; target=&quot;_blank&quot;&gt;utterances&lt;/a&gt;, which is a lightweight app that saves comments using GitHub issues.
+That means:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;you need a (free!) GitHub account to write a comment&lt;/li&gt;
+  &lt;li&gt;we don’t track you or load any scripts that track you&lt;/li&gt;
+  &lt;li&gt;all comments are visible on the Issues tab of our &lt;a href=&quot;https://github.com/jdossgollin/americas-water-blog&quot; target=&quot;_blank&quot;&gt;GitHub repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This blog does not currently have its own policy on appropriate comments, but instead adopts the &lt;a href=&quot;https://www.agu.org/-/media/Files/Learn-About-AGU/AGU_Scientific_Integrity_and_Professional_Ethics_Policy_document.pdf&quot; target=&quot;_blank&quot;&gt;AGU Code of Conduct&lt;/a&gt;.
+We reserve the right to moderate comments, lock conversations, &lt;a href=&quot;https://docs.github.com/en/github/building-a-strong-community/moderating-comments-and-conversations&quot; target=&quot;_blank&quot;&gt;etc.&lt;/a&gt; at our discretion.&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>James Doss-Gollin</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="how-to-contribute" />
+      
+
+      
+        <summary type="html">We’re building a digital community and want to hear your voice.</summary>
+      
+
+      
+      
+    </entry>
+  
+    <entry>
+      <title type="html">Suggest an improvement</title>
+      <link href="/2020-07-22-suggest-improvement" rel="alternate" type="text/html" title="Suggest an improvement" />
+      <published>2020-07-22T11:00:00+00:00</published>
+      <updated>2020-07-22T11:00:00+00:00</updated>
+      <id>/improvement</id>
+      <content type="html" xml:base="/2020-07-22-suggest-improvement">&lt;p&gt;Did you spot a typo in one of our posts?
+Is a link no longer working?
+Do you have suggestions for this site?
+If so, head to the &lt;a href=&quot;https://github.com/jdossgollin/americas-water-blog/issues&quot; target=&quot;_blank&quot;&gt;Repository Issues Tab&lt;/a&gt; and create a new issue to suggest improvements.
+You’ll need a GitHub account, but they’re free (and useful!)&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>James Doss-Gollin</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="how-to-contribute" />
+      
+
+      
+        <summary type="html">Did you spot a typo in one of our posts? Is a link no longer working? Do you have suggestions for this site? If so, head to the Repository Issues Tab and create a new issue to suggest improvements. You’ll need a GitHub account, but they’re free (and useful!)</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
