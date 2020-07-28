@@ -50,12 +50,6 @@ feed:
   path: feed.xml
 
 # Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
 safe: False
 lsi: False
 username: jdossgollin
@@ -65,6 +59,7 @@ destination: _site
 production_url: https://americaswater.blog
 source_url: https://github.com/jdossgollin/americas-water-blog/
 
+# have to add this or else jekyll won't build the pages here
 include: [_pages]
 
 # To use Utterance comments,  you can going to https://utteranc.es/ get more parameters interpretation.
@@ -82,21 +77,20 @@ scholar:
   sort_by: year
   order: descending
 
+# these files will be ignored by jekyll when building the website
 exclude:
-  - assets/css
-  - node_modules
-  - vendor
+  - .git*
   - .travis.yml
+  - "*.Rmd"
+  - assets/css
+  - changelog.md
   - Gemfile
   - Gemfile.lock
   - GHOST.txt
   - gulpfile.js
   - LICENSE
-  - package.json
-  - package-lock.json
+  - node_modules
   - Rakefile
   - README.md
   - script.py
-  - changelog.md
-  - "*.Rmd"
-  - .git*
+  - vendor
