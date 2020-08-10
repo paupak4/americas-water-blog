@@ -3,3 +3,9 @@ how-to-contribute:
   long_name: How to contribute
   description: Guides for how to contribute to this blog
   cover: assets/images/tags/how-to-contribute.jpg
+
+climate-migrations:
+  name: climate-migrations
+  long_name: Climate driven migrations
+  description: Discussions of how climate may or may not be the cause of human migration and displacement
+  cover: assets/images/tags/climate-migrations.jpg
